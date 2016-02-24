@@ -12,7 +12,7 @@
 	<body>
 		<script src="Three.min.js"></script>
 		<script>
-		  var scene = new THREE.Scene();
+		  var escena = new THREE.Scene();
 		  var fov=75;
 		  var aspect =window.innerWidth/window.innerHeight;
 		  var near= 0.1;
@@ -29,13 +29,13 @@
       var forma= new THREE.BoxGeometry( 1, 1, 1 );
       var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
       var cubo = new THREE.Mesh( forma, material );
-      scene.add( cubo );
+      escena.add( cubo );
       
       function render() {
 	    requestAnimationFrame( render );
-	    cube.rotation.x += 0.1;
-	cube.rotation.y += 0.1;
-	    renderer.render( scene, camera );
+	    cubo.rotation.x += 0.1;
+	cubo.rotation.y += 0.1;
+	    renderer.render( escena, camera );
       }
       render();
 
