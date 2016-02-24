@@ -32,6 +32,8 @@
       
       function render() {
 	    requestAnimationFrame( render );
+	toro.rotation.x += 0.1;
+	toro.rotation.y += 0.1;
 	    renderer.render( escena, camera );
       }
       render();
