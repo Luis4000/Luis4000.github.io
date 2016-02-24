@@ -12,7 +12,7 @@
 	<body>
 		<script src="three.min.js"></script>
 		<script>
-		  var scene = new THREE.Scene();
+		  var escena = new THREE.Scene();
 		  var fov=75;
 		  var aspect =window.innerWidth/window.innerHeight;
 		  var near= 0.1;
@@ -32,7 +32,7 @@
       
       function render() {
 	    requestAnimationFrame( render );
-	    renderer.render( scene, camera );
+	    renderer.render( escena, camera );
       }
       render();
      
