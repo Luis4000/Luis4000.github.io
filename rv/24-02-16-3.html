@@ -25,7 +25,7 @@
       var renderer = new THREE.WebGLRenderer();
       renderer.setSize( window.innerWidth, window.innerHeight );
       document.body.appendChild( renderer.domElement );
-      var forma= new THREE.TorusGeometry(5,6);
+      var forma= new THREE.TorusGeometry(1,2);
       var material = new THREE.MeshDepthMaterial();
       var toro = new THREE.Mesh( forma, material );
       escena.add( toro );
