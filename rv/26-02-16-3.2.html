@@ -32,12 +32,13 @@
       //La figura se establece sobre el plano ZX
       var puntos=[];
       puntos.push(new THREE.Vector2(30,70));      
+      puntos.push(new THREE.Vector2(40,70));   
       puntos.push(new THREE.Vector2(40,60));      
-      puntos.push(new THREE.Vector2(40,50));   
-      puntos.push(new THREE.Vector2(30,40));      
-      puntos.push(new THREE.Vector2(40,30));      
-      puntos.push(new THREE.Vector2(50,20));      
-      puntos.push(new THREE.Vector2(70,10));      
+      puntos.push(new THREE.Vector2(60,50));   
+      puntos.push(new THREE.Vector2(65,40));      
+      puntos.push(new THREE.Vector2(65,30));      
+      puntos.push(new THREE.Vector2(60,20));      
+      puntos.push(new THREE.Vector2(30,20));      
       
      var forma= new THREE.LatheGeometry(puntos);  //La revolución se realiza sobre el eje z
       var malla = new THREE.Mesh(forma);
