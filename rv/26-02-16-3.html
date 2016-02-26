@@ -32,9 +32,9 @@
       //La figura se establece sobre el plano ZX
       var puntos=[];
       for (var i=0;i<50;i++){
-      puntos.push(new THREE.Vector3(            //Se insertan puntos al arreglo
+      puntos.push(new THREE.Vector2(            //Se insertan puntos al arreglo
                       Math.sin(i*0.2)*15+50,    //Eje x
-                      0,                        //Eje y
+                                            //Eje y
                       (i-5)*2));                //Eje z
       }
       
