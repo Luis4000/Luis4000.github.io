@@ -46,6 +46,7 @@ document.body.appendChild(render.domElement);
 }
 
 //Loop
+function loop(){
 requestAnimationFrame(loop);
 renderer.render(escena,camara);
 if (Math.abs(piernaD.rotation.z)>.5)
