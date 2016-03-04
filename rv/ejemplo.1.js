@@ -1,5 +1,5 @@
 function Pierna(){
-TRHEE.Object3D.call(this);
+THREE.Object3D.call(this);
 //Mallas para pierna y pie
 this.pierna=new THREE.Mesh(new THREE.BoxGeometry(1,5,1));
 this.pie=new THREE.Mesh(new THREE.BoxGeometry(2,1,1));
