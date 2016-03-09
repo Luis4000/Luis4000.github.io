@@ -1,5 +1,5 @@
 function setup(){
-var forma=new THREE.BoxGeometry(100,100,500);
+var forma=new THREE.BoxGeometry(1,1,1);
 var material=new THREE.MeshLambertMaterial({color:'#ffffff'});
 malla=new THREE.Mesh(forma, material);
 
