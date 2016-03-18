@@ -14,12 +14,22 @@ this.add(this.pierna);
 this.add(this.pie);
 }
 
+function Cuerpo(){
+THREE.Object3D.call(this);
+this.cuerpo=new THREE.Mesh(new THREE.CylinderGeometry(1,2,5,10));
+this.cuerpo.position.y=0;
+this.add(this.cuerpo);
+}
+
+
+
 //Se establece la herencia entre la pierna y el object 3d
 Pierna.prototype=new THREE.Object3D();
+Cuerpo.prototype=new THREE.Object3D();
 
 //Se procede a definir la funcion de inicializacion del mundo virtual
 function setup(){
-var cuerpo=new THREE.Mesh(new THREE.CylinderGeometry(1,2,5,10));
+cuerpo=new Cuerpo();
 piernaD=new Pierna();
 piernaI=new Pierna();
 
