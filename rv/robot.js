@@ -47,6 +47,7 @@ this.add(this.cabeza);
 Pierna.prototype=new THREE.Object3D();
 Cuerpo.prototype=new THREE.Object3D();
 Brazo.prototype=new THREE.Object3D();
+Cabeza.prototype=new THREE.Object3D();
 
 //Se procede a definir la funcion de inicializacion del mundo virtual
 function setup(){
