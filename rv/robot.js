@@ -30,8 +30,8 @@ this.mano=new THREE.Mesh(new THREE.BoxGeometry(1.5,1,1));
 
 //Posicion de mallas
 this.brazo.position.y=0;
-this.mano.position.y=-2;
-this.mano.position.x=0;
+this.mano.position.y=-1;
+this.mano.position.x=1;
 
 
 
