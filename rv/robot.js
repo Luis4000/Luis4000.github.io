@@ -26,12 +26,12 @@ function Brazo(){
 THREE.Object3D.call(this);
 //Mallas para pierna y pie
 this.brazo=new THREE.Mesh(new THREE.BoxGeometry(1,3,1));
-this.mano=new THREE.Mesh(new THREE.BoxGeometry(1,1,1));
+this.mano=new THREE.Mesh(new THREE.BoxGeometry(1.5,1,1));
 
 //Posicion de mallas
 this.brazo.position.y=0;
 this.mano.position.y=-2;
-this.mano.position.x=0.5;
+this.mano.position.x=-0.5;
 
 
 
