@@ -33,6 +33,8 @@ this.brazo.position.y=0;
 this.mano.position.y=-2;
 this.mano.position.x=1;
 
+
+
 //Se agrega el objeto 3d para conformar una unidad y se termina la definicion del constructor
 this.add(this.brazo);
 this.add(this.mano);
@@ -56,6 +58,8 @@ brazoD=new Brazo();
 
 piernaD.position.z=-1;
 piernaI.position.z=1;
+brazoD.position.z=-1;
+brazoI.position.z=1;
 
 //Determinamos que tanto van a rotar las figuras en un momento dado
 step=.01;
