@@ -28,18 +28,20 @@ THREE.Object3D.call(this);
 this.brazo=new THREE.Mesh(new THREE.BoxGeometry(1,3,1));
 this.mano=new THREE.Mesh(new THREE.BoxGeometry(1,1,1));
 
-//Posicion de mallas
 this.brazo.position.y=0;
 this.mano.position.y=-1;
 this.mano.position.x=1;
 
-
-
-//Se agrega el objeto 3d para conformar una unidad y se termina la definicion del constructor
 this.add(this.brazo);
 this.add(this.mano);
 }
 
+function Cabeza(){
+THREE.Object3D.call(this);
+this.cabeza=new THREE.SphereGeometry( 1 );
+this.cabeza.position.y=0;
+this.add(this.cabeza);
+}
 
 //Se establece la herencia entre la pierna y el object 3d
 Pierna.prototype=new THREE.Object3D();
@@ -53,6 +55,7 @@ piernaD=new Pierna();
 piernaI=new Pierna();
 brazoI=new Brazo();
 brazoD=new Brazo();
+cabeza=new Cabeza();
 
 //El cuerpo y las piernas se desplazan a posiciones deseadas
 
@@ -71,6 +74,7 @@ escena.add(piernaD);
 escena.add(piernaI);
 escena.add(brazoI);
 escena.add(brazoD);
+escena.add(cabeza);
 
 //Agregamos camara y renderer
 camara=new THREE.PerspectiveCamera();
@@ -94,6 +98,6 @@ if (Math.abs(piernaD.rotation.z)>.5)
 
 //Se declaran simbolos globales y se ejecuta setup y loop
 var escena,camara,renderer;
-var step, piernaD,piernaI, cuerpo, brazoI, brazoD;
+var step, piernaD,piernaI, cuerpo, brazoI, brazoD, cabeza;
 setup();
 loop();
