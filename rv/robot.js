@@ -16,7 +16,7 @@ this.add(this.pie);
 
 function Cuerpo(){
 THREE.Object3D.call(this);
-this.cuerpo=new THREE.Mesh(new THREE.CylinderGeometry(1,2,5,5));
+this.cuerpo=new THREE.Mesh(new THREE.CylinderGeometry(1,2,5,10));
 this.cuerpo.position.y=0;
 this.add(this.cuerpo);
 }
@@ -58,8 +58,8 @@ brazoD=new Brazo();
 
 piernaD.position.z=-1;
 piernaI.position.z=1;
-brazoD.position.z=-1;
-brazoI.position.z=1;
+brazoD.position.z=-2;
+brazoI.position.z=2;
 
 //Determinamos que tanto van a rotar las figuras en un momento dado
 step=.01;
