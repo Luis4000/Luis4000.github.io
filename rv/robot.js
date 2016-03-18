@@ -39,7 +39,7 @@ this.add(this.mano);
 function Cabeza(){
 THREE.Object3D.call(this);
 this.cabeza=new THREE.Mesh(new THREE.SphereGeometry(1));
-this.cabeza.position.y=1;
+this.cabeza.position.y=3;
 this.add(this.cabeza);
 }
 
