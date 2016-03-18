@@ -88,8 +88,8 @@ if (Math.abs(piernaD.rotation.z)>.5)
   step=-step;
   piernaD.rotation.z+=step;
   piernaI.rotation.z-=step;
-  brazoD.rotation.z+=step;
-  brazoI.rotation.z-=step;
+  brazoI.rotation.z+=step;
+  brazoD.rotation.z-=step;
 }
 
 //Se declaran simbolos globales y se ejecuta setup y loop
