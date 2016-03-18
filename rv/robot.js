@@ -25,7 +25,7 @@ this.add(this.cuerpo);
 function Brazo(){
 THREE.Object3D.call(this);
 //Mallas para pierna y pie
-this.brazo=new THREE.Mesh(new THREE.BoxGeometry(1,5,1));
+this.brazo=new THREE.Mesh(new THREE.BoxGeometry(1,3,1));
 this.mano=new THREE.Mesh(new THREE.BoxGeometry(2,1,1));
 
 //Posicion de mallas
@@ -88,6 +88,8 @@ if (Math.abs(piernaD.rotation.z)>.5)
   step=-step;
   piernaD.rotation.z+=step;
   piernaI.rotation.z-=step;
+  brazoD.rotation.z+=step;
+  brazoI.rotation.z-=step;
 }
 
 //Se declaran simbolos globales y se ejecuta setup y loop
