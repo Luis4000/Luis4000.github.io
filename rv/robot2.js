@@ -68,6 +68,7 @@ brazoI.position.z=2;
 //Determinamos que tanto van a rotar las figuras en un momento dado
 step=.01;
 
+
 //Definimos la escena
 escena=new THREE.Scene();
 escena.add(cuerpo);
