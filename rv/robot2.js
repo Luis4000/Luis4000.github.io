@@ -1,9 +1,8 @@
-var material=new THREE.MeshLambertMaterial({color:'#ffffff'});
 function Pierna(){
 THREE.Object3D.call(this);
 //Mallas para pierna y pie
-this.pierna=new THREE.Mesh(new THREE.BoxGeometry(1,5,1),material);
-this.pie=new THREE.Mesh(new THREE.BoxGeometry(2,1,1),material);
+this.pierna=new THREE.Mesh(new THREE.BoxGeometry(1,5,1));
+this.pie=new THREE.Mesh(new THREE.BoxGeometry(2,1,1));
 
 //Posicion de mallas
 this.pierna.position.y=-2.5;
@@ -17,7 +16,7 @@ this.add(this.pie);
 
 function Cuerpo(){
 THREE.Object3D.call(this);
-this.cuerpo=new THREE.Mesh(new THREE.CylinderGeometry(1,2,5,10),material);
+this.cuerpo=new THREE.Mesh(new THREE.CylinderGeometry(1,2,5,10));
 this.cuerpo.position.y=0;
 this.add(this.cuerpo);
 }
@@ -26,8 +25,8 @@ this.add(this.cuerpo);
 function Brazo(){
 THREE.Object3D.call(this);
 //Mallas para pierna y pie
-this.brazo=new THREE.Mesh(new THREE.BoxGeometry(1,3,1),material);
-this.mano=new THREE.Mesh(new THREE.BoxGeometry(1,1,1),material);
+this.brazo=new THREE.Mesh(new THREE.BoxGeometry(1,3,1));
+this.mano=new THREE.Mesh(new THREE.BoxGeometry(1,1,1));
 
 this.brazo.position.y=0;
 this.mano.position.y=-1;
@@ -39,7 +38,7 @@ this.add(this.mano);
 
 function Cabeza(){
 THREE.Object3D.call(this);
-this.cabeza=new THREE.Mesh(new THREE.SphereGeometry(1.5),material);
+this.cabeza=new THREE.Mesh(new THREE.SphereGeometry(1.5));
 this.cabeza.position.y=4;
 this.add(this.cabeza);
 }
