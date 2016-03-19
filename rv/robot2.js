@@ -4,8 +4,8 @@ var material=new THREE.MeshLambertMaterial({color:'#ffffff'});
 //Mallas para pierna y pie
 var piernaf=new THREE.BoxGeometry(1,5,1);
 var pief=new THREE.BoxGeometry(2,1,1);
-pierna=new THREE.Mesh(piernaf, material);
-pie=new THREE.Mesh(pief, material);
+this.pierna=new THREE.Mesh(piernaf, material);
+this.pie=new THREE.Mesh(pief, material);
 
 //Posicion de mallas
 this.pierna.position.y=-2.5;
