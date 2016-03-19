@@ -1,8 +1,8 @@
 function Pierna(){
 THREE.Object3D.call(this);
 //Mallas para pierna y pie
-this.pierna=new THREE.Mesh(new THREE.BoxGeometry(1,5,1));
-this.pie=new THREE.Mesh(new THREE.BoxGeometry(2,1,1));
+this.pierna=new THREE.MeshLambertMaterial(new THREE.BoxGeometry(1,5,1));
+this.pie=new THREE.MeshLambertMaterial(new THREE.BoxGeometry(2,1,1));
 
 //Posicion de mallas
 this.pierna.position.y=-2.5;
