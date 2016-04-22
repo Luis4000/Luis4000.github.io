@@ -3,7 +3,7 @@ function setup() {
 	cubo1= new THREE.Mesh(new THREE.BoxGeometry(1,32,10),new THREE.MeshPhongMaterial({color:'#00cc00'}));
 	cubo2= new THREE.Mesh(new THREE.BoxGeometry(1,32,10),new THREE.MeshPhongMaterial({color:'#00cc00'}));
 cubo3= new THREE.Mesh(new THREE.BoxGeometry(32,1,10),new THREE.MeshPhongMaterial({color:'#00cc00'}));
-	cubo4= new THREE.Mesh(new THREE.BoxGeometry(32,1,10),new THREE.MesPhongMaterial({color:'#00cc00'}));
+	cubo4= new THREE.Mesh(new THREE.BoxGeometry(32,1,10),new THREE.MeshPhongMaterial({color:'#00cc00'}));
 pelota= new THREE.Mesh(new THREE.SphereGeometry(0.5),new THREE.MeshNormalMaterial());
 	
 	cubo1.position.x=16;
